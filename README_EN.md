@@ -15,7 +15,12 @@ The application simulates EV request submission, driving, station queues, chargi
 **Keywords:** `C11` · `GTK 4` · `Data Structures` · `Dijkstra` · `Priority Queue` · `Discrete-Time Simulation`
 
 <p align="center">
-  <img src="assets/screenshots/overview.png" alt="Main application window" width="100%">
+  <img src="assets/demo/ev-scheduling-demo.gif" alt="EV charging scheduling simulation demo" width="100%">
+</p>
+
+<p align="center">
+  <sub>End-to-end simulation of station recommendation, route travel, queuing, charging, and experiment statistics</sub><br>
+  <a href="assets/demo/ev-scheduling-demo.mp4">Watch the high-quality MP4 demo</a>
 </p>
 
 ## Why This Project Is Useful

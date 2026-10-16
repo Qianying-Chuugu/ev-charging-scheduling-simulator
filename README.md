@@ -14,10 +14,13 @@
 [🚀 快速开始](#-快速开始) · [✨ 功能亮点](#-功能亮点) · [🧠 算法与数据结构](#-算法与数据结构) · [📊 对照实验](#-对照实验) · [🧩 模块说明](#-模块说明) · [🧪 测试](#-测试)
 
 <p align="center">
-  <img src="assets/screenshots/overview.png" alt="充电资源调度系统主界面" width="100%">
+  <img src="assets/demo/ev-scheduling-demo.gif" alt="新能源汽车充电资源调度仿真演示" width="100%">
 </p>
 
-<p align="center"><sub>交互式路网、车辆与充电站操作、仿真控制和统计对比集中在同一桌面界面中</sub></p>
+<p align="center">
+  <sub>车辆推荐、路径行驶、站内排队、充电服务与实验统计的完整仿真流程</sub><br>
+  <a href="assets/demo/ev-scheduling-demo.mp4">查看高清 MP4 演示</a>
+</p>
 
 ---
 
