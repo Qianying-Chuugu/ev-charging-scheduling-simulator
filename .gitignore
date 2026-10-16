@@ -1,0 +1,46 @@
+# Build artifacts
+*.exe
+*.dll
+*.o
+*.obj
+*.a
+*.lib
+*.pdb
+*.ilk
+*.d
+
+# Keep documentation for the generated build directory
+build/*
+!build/README.md
+
+# Generated simulation and test output
+data/output/*
+!data/output/.gitkeep
+
+# Portable release packages
+*.zip
+*.7z
+*.rar
+ChargingSimulation_Portable_*/
+发布包_*/
+
+# Logs, crash dumps, and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.dmp
+*~
+
+# IDE and editor settings
+.vscode/
+.idea/
+.vs/
+*.user
+*.suo
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
