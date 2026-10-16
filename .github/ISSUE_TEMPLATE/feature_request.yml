@@ -1,0 +1,45 @@
+name: 功能建议
+description: 提议新的算法、实验指标、界面功能或数据能力
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决的问题
+      description: 请说明当前使用场景和遇到的限制。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 请描述期望的行为、算法或交互方式。
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 涉及模块
+      multiple: true
+      options:
+        - 路网与路径规划
+        - 排队与调度算法
+        - 充电站推荐
+        - 离散时间仿真
+        - GTK 4 界面
+        - CSV 数据与实验指标
+        - 构建、测试或文档
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 可选方案或补充材料
+      description: 可提供伪代码、论文、截图或同类实现链接。
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: 参与意愿
+      options:
+        - label: 我愿意尝试实现并提交 Pull Request。

@@ -1,0 +1,65 @@
+name: Bug 报告
+description: 报告可以稳定复现的程序错误
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: 感谢反馈。请填写足够的信息，以便复现和定位问题。
+  - type: input
+    id: version
+    attributes:
+      label: 使用版本
+      description: 例如 v1.0.0、提交哈希或 main 分支日期
+      placeholder: v1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 运行环境
+      options:
+        - Windows 11 + MSYS2 UCRT64
+        - Windows 10 + MSYS2 UCRT64
+        - Linux
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请按顺序列出触发问题的操作。
+      placeholder: |
+        1. 启动程序
+        2. 选择车辆……
+        3. 点击……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志或截图
+      description: 可粘贴终端输出，或拖入界面截图。请先移除个人信息。
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已经搜索现有 Issue，确认没有相同问题。
+          required: true
+        - label: 我没有在日志、截图或数据中包含敏感信息。
+          required: true

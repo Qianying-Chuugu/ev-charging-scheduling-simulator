@@ -1,5 +1,10 @@
 # 城市新能源汽车充电资源调度仿真系统
 
+**简体中文** | [English](README_EN.md)
+
+[![C11 Build and Tests](https://github.com/Qianying-Chuugu/ev-charging-scheduling-simulator/actions/workflows/ci.yml/badge.svg)](https://github.com/Qianying-Chuugu/ev-charging-scheduling-simulator/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > 用 **C11 + GTK 4** 构建的可视化充电调度实验平台：让图、堆、哈希表和链表真正参与路径规划、排队调度与离散时间仿真。
 
 系统在可交互路网上模拟车辆提交请求、行驶、排队、充电以及设备故障与恢复，并实时对比“**综合推荐 + 动态优先级**”和“**最近站点 + 先来先服务**”两种策略。
@@ -200,6 +205,8 @@ flowchart LR
 - **行驶时间：** 平均值；
 - **吞吐能力：** 累计完成车辆数、单位时间完成车辆数。
 
+指标计算口径、推荐实验步骤和结果记录模板见 [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md)。
+
 ## 🧩 模块说明
 
 | 模块 | 目录 | 主要职责 |
@@ -236,6 +243,7 @@ flowchart LR
 
 ```text
 .
+├─ .github/                  自动测试、Issue 和 PR 模板
 ├─ assets/                   地图图标及第三方资源许可
 ├─ build/                    编译输出
 ├─ data/
@@ -254,6 +262,9 @@ flowchart LR
 │  ├─ module8_ui/           GTK 4 前端
 │  └─ module9_timer/        GTK 定时控制
 ├─ tests/                    单元测试和整体联调测试
+├─ docs/                     实验复现说明
+├─ CONTRIBUTING.md           贡献指南
+├─ README_EN.md              英文项目介绍
 ├─ Makefile                  GNU Make 构建规则
 ├─ 构建GTK4.bat             Windows GTK 前端构建脚本
 └─ 启动GTK4.bat             Windows 启动脚本
@@ -277,6 +288,10 @@ make test
 - 扩展统计指标并导出实验结果。
 
 路网、车辆、站点和充电桩均由 CSV 驱动，输入字段与约束见 [`data/README.md`](data/README.md)。欢迎通过 Issue 讨论想法，也欢迎 Fork 后开展自己的算法实验。
+
+## 🤝 参与贡献
+
+欢迎提交错误报告、功能建议、测试、文档改进和新的调度实验。开始之前请阅读 [`CONTRIBUTING.md`](CONTRIBUTING.md)，并使用仓库提供的 Bug、功能建议和 Pull Request 模板。
 
 ## 📦 第三方资源
 
